@@ -1,0 +1,37 @@
+<view class='productDetail'>
+  <!-- swiper -->
+  <swiper class='swiper-style' indicator-dots='true' interval='2000'>
+    <swiper-item wx:for="{{imageArr}}" wx:for-item="item" wx:key="idx">
+      <image class='swiperImgStyle' src="{{item.skuImagePath + '350x350.jpg'}}" catchtap='onClickImg' data-imgurl="{{item.skuImagePath + '1200x1200.jpg'}}"></image>
+    </swiper-item>
+  </swiper>
+
+  <!-- 商品信息(名称/简介/价钱) -->
+  <text class='productNameCN'>{{brandInfo.brandInfoDto.brandNameEN}}</text>
+  <text class='productNameEN'>{{brandInfo.productNameCN}}</text>
+  <text class='productDesc'>{{brandInfo.productNameEN}}</text>
+  <view class='priceStyle'>
+    <text class='priceCN'>$</text>
+    <text class='productPrice'>{{promoyionData.currentSkuOfferPrice}}</text>
+  </view>
+
+  <!-- share -->
+  <view class='shareStyle' catchtap='clickShare'>
+    <button class='plain' open-type="share">
+      <image class='shareImgStyle' src='/pages/img/PDP/share.png'></image>
+    </button>
+  </view>
+
+
+  <!-- bottom -->
+  <view class='bottomStyle'>
+    <!-- mode='aspectFill' -->
+    <image class='bottomSubImg' src='/pages/img/PDP/shopcart.png'></image>
+    <image class='bottomSubImg' src='/pages/img/PDP/kefu.png'></image>
+    <view class='twoButton'>
+      <button class='subButton'>加入购物车</button>
+     <button class='subButton'>现在购买</button>
+    </view>
+  </view>
+
+</view>

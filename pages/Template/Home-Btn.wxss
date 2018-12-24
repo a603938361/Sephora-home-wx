@@ -1,0 +1,22 @@
+.button-style{
+  width: 150rpx;
+  height: 150rpx;
+  display: flex;
+  flex-direction: column;
+  float: left
+}
+
+view image{
+  width: 80rpx;
+  height: 80rpx;
+  margin-left: 35rpx;
+  margin-top: 20rpx;
+}
+
+view text{
+  text-align: center;
+  line-height: 30rpx;
+  margin-top: 10rpx;
+  font-size: 12px;
+  color: #233;
+}

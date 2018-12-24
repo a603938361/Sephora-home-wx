@@ -1,0 +1,6 @@
+<template name="home-button-template">
+  <view class='button-style'>
+    <image src='{{imageUrl}}'></image>
+    <text>{{title}}</text>
+  </view>
+</template>

@@ -1,0 +1,4 @@
+<!--pages/Compent-detail/Compent.wxml-->
+<web-view src="https://m.sephora.cn/campaign/xmaslimitededition20181115/?intcmp=NewHome|Hero|Animation|Campaign|Campaign1|xmaslimitededition20181115|20181212">
+
+</web-view>

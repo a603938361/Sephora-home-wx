@@ -1,0 +1,26 @@
+<import src="../Template/Home-Btn.wxml" />
+<import src="../Template/CategoryTemplate.wxml" />
+
+<view>
+
+  <!-- swiper -->
+  <swiper class='swiper-style' autoplay='true' indicator-dots='true' interval='2000'>
+    <swiper-item wx:for="{{swiperData}}" wx:for-item="item" wx:key="idx">
+      <image class='swiperImgStyle' src='{{item.imagePath}}' catchtap='onClickImg' data-url='{{item.link}}'></image>
+    </swiper-item>
+  </swiper>
+
+  <!-- button -->
+  <view wx:for="{{buttonData}}" wx:for-item="item" wx:key="idx">
+    <view catchtap='onClickButton' data-buttonid='{{item.content}}'>
+      <template is='home-button-template' data="{{imageUrl:item.imagePath, title:item.content}}">
+      </template>
+    </view>
+  </view>
+
+  <!-- category -->
+  <view wx:for="{{categroyArr}}" wx:for-item="skinData" wx:key="idx">
+    <template is="categoryTemplate" data="{{skinData}}" />
+  </view>
+  
+</view>

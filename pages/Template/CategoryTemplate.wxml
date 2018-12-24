@@ -1,0 +1,43 @@
+<template name="categoryTemplate">
+  <view class='categoryContainer'>
+    <view class='headerImgView'>
+      <image class='headerImg' src='{{skinData.commonImageDtoList[0].imagePath}}'></image>
+    </view>
+
+    <view class='bottomView'>
+      <view class='leftItem' catchtap='onClickProduct' data-id='{{skinData.productDtoList[0].catentryId}}'>
+        <image src="{{skinData.productDtoList[0].thumbnail + '210x210.jpg'}}" class='leftImgStyle'></image>
+        <text class='textStyle'>{{skinData.productDtoList[0].name}}</text>
+        <text class='priceStyle'>$ {{skinData.productDtoList[0].listNewMinPrice}}</text>
+      </view>
+
+      <view class='rightItem'>
+        <view class='subRightItem' catchtap='onClickProduct' data-id='{{skinData.productDtoList[1].catentryId}}'>
+          <image src="{{skinData.productDtoList[1].thumbnail + '210x210.jpg'}}" class='rightImgStyle' mode='aspectFit	'></image>
+          <text class='textStyle'>{{skinData.productDtoList[1].name}}</text>
+          <text class='priceStyle'>$ {{skinData.productDtoList[1].listNewMinPrice}}</text>
+        </view>
+
+        <view class='subRightItem' catchtap='onClickProduct' data-id='{{skinData.productDtoList[2].catentryId}}'>
+          <image src="{{skinData.productDtoList[2].thumbnail + '210x210.jpg'}}" class='rightImgStyle' mode='aspectFit'></image>
+          <text class='textStyle'>{{skinData.productDtoList[2].name}}</text>
+          <text class='priceStyle'>$ {{skinData.productDtoList[2].listNewMinPrice}}</text>
+        </view>
+
+        <view class='subRightItem' style='border-bottom:none' catchtap='onClickProduct' data-id='{{skinData.productDtoList[3].catentryId}}'>
+          <image src="{{skinData.productDtoList[3].thumbnail + '210x210.jpg'}}" class='rightImgStyle' mode='aspectFit	'></image>
+          <text class='textStyle'>{{skinData.productDtoList[3].name}}</text>
+          <text class='priceStyle'>$ {{skinData.productDtoList[3].listNewMinPrice}}</text>
+        </view>
+
+        <view class='subRightItem' style='border-bottom:none' catchtap='onClickProduct' data-id='{{skinData.productDtoList[4].catentryId}}'>
+          <image src="{{skinData.productDtoList[4].thumbnail + '210x210.jpg'}}" class='rightImgStyle' mode='aspectFit	'></image>
+          <text class='textStyle'>{{skinData.productDtoList[4].name}}</text>
+          <text class='priceStyle'>$ {{skinData.productDtoList[4].listNewMinPrice}}</text>
+        </view>
+        <view class='rightLine'></view>
+      </view>
+    </view>
+    <view class='bottomLine'></view>
+  </view>
+</template>

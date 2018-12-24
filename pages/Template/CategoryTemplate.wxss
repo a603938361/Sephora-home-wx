@@ -1,0 +1,94 @@
+.categoryContainer {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.headerImgView {
+  width: 100%;
+  height: 340rpx;
+}
+
+.headerImg {
+  margin: 20rpx;
+  width: 710rpx;
+  height: 300rpx;
+}
+
+.bottomView {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  height: 700rpx;
+}
+
+.leftItem {
+  display: flex;
+  flex-direction: column;
+  width: 300rpx;
+  border-right: thick solid gainsboro;
+  border-width: 1rpx;
+}
+
+.leftImgStyle {
+  margin-top: 150rpx;
+  width: 210rpx;
+  height: 210rpx;
+  margin-left: 40rpx;
+}
+
+.textStyle {
+  font-size: 24rpx;
+  color: black;
+  text-align: center;
+  line-height: 30rpx;
+  margin-left: 20rpx;
+  margin-right: 20rpx;
+  display: -webkit-box;
+  word-break: break-all;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+}
+
+.priceStyle {
+  font-size: 24rpx;
+  text-align: center;
+}
+
+.rightItem {
+  width: 450rpx;
+}
+
+.subRightItem {
+  width: 225rpx;
+  height: 350rpx;
+  display: flex;
+  flex-direction: column;
+  float: left;
+  border-bottom: thick solid gainsboro;
+  border-width: 0.5rpx;
+}
+
+.rightImgStyle {
+  margin-top: 20rpx;
+  margin-left: 20rpx;
+  width: 180rpx;
+  height: 180rpx;
+}
+
+.rightLine {
+  position: relative;
+  width: 1px;
+  height: 650rpx;
+  background-color: gainsboro;
+  left: 225rpx;
+  top: 10rpx;
+}
+
+.bottomLine {
+  width: 750rpx;
+  height: 2rpx;
+  background-color: gainsboro;
+}

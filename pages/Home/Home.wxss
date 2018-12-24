@@ -1,0 +1,15 @@
+/* pages/Home/Home.wxss */
+@import '../Template/Home-Btn.wxss';
+@import '../Template/CategoryTemplate.wxss';
+
+
+.swiper-style{
+  width: 100%;
+  height: 420rpx;
+}
+
+.swiperImgStyle{
+  width: 100%;
+  height: 420rpx;
+  margin-left: 0rpx;
+}
